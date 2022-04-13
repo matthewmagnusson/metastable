@@ -92,7 +92,7 @@ bash experiments.sh</pre>
 
 **NOTE: there is some variability in the outcome of the experiments due to the stochastic nature of replicating a metastable failure. You may need to run the experiments more than once to replicate the behavior observed for the paper.**
 
-**NOTE: if after repeating experiments you find that, the baseline case does not recover after the trigger you may need to adjust the request frequency up. If the metastable case does recover after the trigger you may need to adjust the request frequency down. We found that we need to frequently tune the request frequency to demonstrate the different behaviors of the system.**
+**NOTE: if after repeating experiments you find that, the baseline case does not recover after the trigger you may need to adjust the request frequency up. If the metastable case does recover after the trigger you may need to adjust the request frequency down. We found that tuning the request frequency maybe required to demonstrate the different behaviors of the system.**
 
 
 
