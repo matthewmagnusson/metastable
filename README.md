@@ -109,4 +109,4 @@ The output of each experiment is written to a log file in a date stamped directo
 1. succ or err (representing successful or errror request)
 1. latency (microseconds)
 
-A tool has been provided to plot the results of the experiment. It is available at https://colab.research.google.com/drive/19EQygjdZ5KE7eudUXprHs361wdY1FAxU?usp=sharing
+A tool has been provided to plot the results of the experiment. It is available at https://colab.research.google.com/drive/1kt0pWFr98l9FzynWoTXtG9OvR725R7Mv?usp=sharing
