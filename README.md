@@ -12,12 +12,24 @@ For the Mongo experiment, we create 4 virtual machines in AWS.  Three replica se
  
  
 ## AWS Environment Access ##
-Evaluator can contact authors for access to a vm environment set up in AWS where the client and replicas are already set-up and configured to run the experiments, otherwise steps for setting up vm environment provided below. 
+Evaluator can run scripts for access to a vm environment set up in AWS where the client and replicas are already set-up and configured to run the experiments, otherwise steps for setting up vm environment provided below. If you do this step, you do not need to setup the vms, go directly to usage after following these steps. 
 
- 
+Evaluators log into the vm provided with submission
+<pre>cd Retries_Experiments
+bash turn_on_vms.sh
+bash get_vms_ip.sh
+</pre>
 
- 
-## Client machine
+This turns on the server instances and returns the information which includes the public ip address of the client instance. This is where experiments can be run from following the usage steps below.
+To connect to the client
+<pre>ssh -i "evaluator.pem" ubuntu@[public ip address]
+</pre>
+
+When done please turn off the server instances
+<pre>bash turn_off_vms.sh
+</pre>
+
+ ## Client machine
 1. Create virtual machine in AWS in a region
  * Amazon Machine Image - Ubuntu Server 20.04 LTS (HVM), SSD Volume Type 64-bit(x86)
  * Instance type - m5ad.2xlarge
